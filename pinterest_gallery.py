@@ -123,25 +123,10 @@ if args.i == 1:
             os.makedirs(args.o)
         with open(args.o+"/"+fname, "wb") as f:
             res = requests.get(link,stream=True)
-            total_length = res.headers.get("content-length")
-            if total_length is None:
-                f.write(res.content)
-                c+=1
-            else:
-                dl, total_length = 0, int(total_length)
-                for d in res.iter_content():
-                    dl += len(d)
-                    f.write(d)
-                    done = int(30 * dl / total_length)
-                    sys.stdout.write("\r[%s%s] %%%-6.2f %s %s" %
-                                     ("■" * done,
-                                      ' ' * (31 - done),
-                                      100 * dl / total_length,
-                                      colors.OKGREEN + "Downloading... " + colors.ENDC,
-                                      colors.WARNING + fname + colors.ENDC))
-                    sys.stdout.flush()
-                c += 1
-        print("")
+            f.write(res.content)
+            c+=1
+            print("%s %s" % (colors.OKGREEN + "Downloading... " + colors.ENDC, colors.WARNING + fname + colors.ENDC))
+            
     for i in range(0,c):
         images += """
         <div class="pin">
