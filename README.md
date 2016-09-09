@@ -21,5 +21,5 @@ Libraries:
 
 ![View Screen Shot](https://github.com/oguzhaninan/Gallery-With-Pinterest-Pins/blob/master/Screenshot2.png)
 
-![View Screen Shot](https://github.com/oguzhaninan/Gallery-With-Pinterest-Pins/blob/master/Screenshot3.png)
+![View Screen Shot](https://github.com/oguzhaninan/Gallery-With-Pinterest-Pins/blob/master/Screenshot.png)
 
