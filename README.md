@@ -17,6 +17,7 @@ Libraries:
 1. Requests
 2. Argparse
 
+
 ![View Screen Shot](https://github.com/oguzhaninan/Gallery-With-Pinterest-Pins/blob/master/Selection_002.png)
 
 ![View Screen Shot](https://github.com/oguzhaninan/Gallery-With-Pinterest-Pins/blob/master/Screenshot2.png)
